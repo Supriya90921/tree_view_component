@@ -126,7 +126,7 @@ export function generateId(): string {
 }
 
 // Simulate lazy loading with delay
-export async function loadLazyChildren(nodeId: string): Promise<TreeNode[]> {
+export async function loadLazyChildren(_nodeId: string): Promise<TreeNode[]> {
   await new Promise((resolve) => setTimeout(resolve, 800));
 
   const count = Math.floor(Math.random() * 3) + 1;
